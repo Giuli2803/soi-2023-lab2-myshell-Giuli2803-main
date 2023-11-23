@@ -109,6 +109,7 @@ int execute_command(char *tokens[], int count,char *commands[],int countcom)
                         perror("execvp in backgroun");
                         exit(EXIT_FAILURE);
                     } 
+                    
                 } else if (pid < 0) {
                     perror("fork");
                 } else { // Proceso padre
